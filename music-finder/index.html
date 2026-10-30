@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="uz"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Music Finder — Musiqa qidiruv</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="bg"></div><div id="veil"></div>
+<header class="glass" id="nav"><a class="logo" href="#/home">♫ Music<span>Finder</span></a>
+<button id="burger" aria-label="Menu">☰</button>
+<nav id="links"><a href="#/home">Home</a><a href="#/search/">Search</a><a href="#/trending">Trending</a><a href="#/genres">Genres</a><a href="#/artists">Artists</a><a href="#/albums">Albums</a><a href="#/playlists">Playlists</a><a href="#/favorites">Favorites</a><a href="#/history">History</a><a href="#/videos">Videos</a><a href="#/about">About</a></nav></header>
+<main id="app"></main>
+<footer>© 2026 Music Finder · Ma'lumotlar: iTunes Search API</footer>
+<div id="player" class="glass hide"><div id="pa" class="part"></div><div id="yw" style="display:none;flex:none;width:128px;height:72px;border-radius:10px;overflow:hidden"><div id="ypl"></div></div><div class="pi"><b id="pt"></b><small id="pr"></small></div>
+<div class="pc"><button id="prev">⏮</button><button id="pp">▶</button><button id="next">⏭</button></div>
+<input id="seek" type="range" min="0" max="100" value="0"><div id="eq"><i></i><i></i><i></i><i></i></div><input id="vol" type="range" min="0" max="1" step=".05" value=".8"></div>
+<div id="modal" class="hide"><div class="mbox glass"><button id="mx">✕</button><div id="ymw"></div><p id="mt"></p></div></div>
+<div id="toast"></div>
+<script src="config.js"></script><script src="app.js"></script></body></html>
